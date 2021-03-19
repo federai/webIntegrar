@@ -1,0 +1,41 @@
+header{
+    height: 70px;
+}
+.navbar {
+  
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.nav-transparent {
+  background-color: transparent;
+  transition: background-color 400ms linear;
+}
+.nav-colored {
+  background-color: red;
+  transition: background-color 400ms linear;
+}
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 20%;
+  height: 70px;
+  align-items: center;
+}
+.menu li {
+  display: flex;
+  padding: 2%;
+  list-style: none;
+}
+
+.menuLink {
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+  color: white;
+  font-size: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
