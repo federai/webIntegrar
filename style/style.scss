@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
- 
+  
   
 }
 $fontprincipal : "Rubik", sans-serif;
@@ -24,7 +24,9 @@ $img-height: 150px;
 $img-border: white;
 $img-border-width: 6px;
 
-
+main{
+  background-color: #002642;
+}
 @import 'header';
 @import 'mainvideo';
 @import 'categories';

@@ -56,10 +56,71 @@
 }
 
 .image-sites img:hover{
-  transform: scale(1.2);;
+  transform: scale(1.2);
 }
 .link{
   grid-column-start: 2;
 }
 
 
+
+
+
+
+
+
+.test{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+}
+
+.test1{
+  display: flex;
+  flex-direction: column;
+}
+.test1 img{
+   width: 30%;
+   align-self: center;
+   z-index: 2;
+}
+
+.titletest{
+  align-self: center;
+  background-color: #93278F;
+  width: 75%;
+  text-align: center;
+  transform: translateY(-70px);
+  border-radius: 5px;
+
+
+}
+.colororange{
+  background-color:#f36a09 ;
+}
+@keyframes agrandar{
+  100%{
+    
+    transform: translateY(-80px);
+    
+  }
+}
+.titletest:hover{
+  animation-name: agrandar;
+  animation-duration: 2s;
+  animation-direction: alternate;
+   animation-iteration-count: infinite;
+  
+}
+.titletest h2{
+  font-family: $fontprincipal;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  color: white;
+  font-size: xx-large;
+}
+.titletest h3{
+  font-family: $fontprincipal;
+  margin-bottom: 60px;
+  color: whitesmoke;
+}
