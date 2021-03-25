@@ -1,5 +1,5 @@
 .categories {
-  z-index: -1;
+  // z-index: -1;
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -24,26 +24,8 @@
     color: black;
 }
 
-.overlay{
-    padding: 0%;
-    border: 2px solid black;
-    position: relative;
-    top: 0;
-    width: 100%;
-    height:100%;
-    transition: .5s ease;
-    opacity: 0;
-   
- }
- .colortitle {
-   color: black;
- }
- .title:hover .colortitle {
-    border: 2px solid red;
-}
-  .type-categorie:hover {
-     border: 5px solid black;
-  }
+
+
   
 //   .container:hover .overlay {
 //     opacity: 1;
@@ -66,7 +48,18 @@
 
 .outer-border{
     width: 75%;
+    
 }
 .image-sites img{
     grid-column-start: 2;
+    transition: transform .2s;
 }
+
+.image-sites img:hover{
+  transform: scale(1.2);;
+}
+.link{
+  grid-column-start: 2;
+}
+
+

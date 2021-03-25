@@ -1,18 +1,21 @@
 header{
     height: 70px;
-}
-.navbar {
   
+}
+
+.navbar {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 2;
+  
 }
 .nav-transparent {
   background-color: transparent;
   transition: background-color 400ms linear;
 }
 .nav-colored {
-  background-color: red;
+  background-color: black;
   transition: background-color 400ms linear;
 }
 .menu {

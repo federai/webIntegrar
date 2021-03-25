@@ -1,0 +1,47 @@
+.titleTeam{
+    font-family: $fontprincipal;
+    margin-top: 10%;
+    text-align: center;
+    font-size: 44px;
+}
+
+.team{
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10%;
+    margin-bottom: 10%;
+    
+}
+.image-profile{
+    text-align: center;
+    
+
+}
+.image-profile img{ 
+    box-shadow: 0px 0px 0px 1px #FAFAFA;
+    transition: box-shadow 0.6s linear;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
+}
+.image-profile img:hover{
+    box-shadow: 0px 0px 0px 7px #cab4b4ce;
+}
+.position{
+    font-family: $fontprincipal;
+    text-align: center;
+    margin-top: 2%;
+}
+.icons{
+    margin-top: 10px;
+}
+.icon{
+    padding: 2%;
+    text-decoration: none;
+    color: black;
+}
+.margin{
+    margin-bottom: 2%;
+}
