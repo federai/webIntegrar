@@ -1,17 +1,20 @@
 .titleTeam{
     font-family: $fontprincipal;
-    margin-top: 10%;
+    margin-top: 5%;
     text-align: center;
     font-size: 44px;
+    color: white;
+    margin-bottom: 7%;
 }
 
 .team{
-    margin-top: 10%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 10%;
-    margin-bottom: 10%;
     
+    
+}
+.teammate{
+    margin-bottom: 15%;
 }
 .image-profile{
     text-align: center;
@@ -27,12 +30,13 @@
     border-top-left-radius: 5%;
 }
 .image-profile img:hover{
-    box-shadow: 0px 0px 0px 7px #cab4b4ce;
+    box-shadow: 0px 0px 0px 7px #B40406;
 }
 .position{
     font-family: $fontprincipal;
     text-align: center;
-    margin-top: 2%;
+    margin-top: 4%;
+    color: white;
 }
 .icons{
     margin-top: 10px;
@@ -40,7 +44,7 @@
 .icon{
     padding: 2%;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 .margin{
     margin-bottom: 2%;

@@ -1,6 +1,8 @@
 
 .pilarescontent{
-    background-color: #FAFAFA;
+    background-color: #032b47;
+    
+    
     
 }
 .pilarestitle{
@@ -9,60 +11,65 @@
     font-size: 44px;
     margin-bottom: 7%;
     font-family: $fontprincipal;
+    color: white;
     
 }
 .pilares{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    height: 12.5rem;
+    
     
 }
-.flip-card {
-    background-color: transparent;
-    width: 100%;
-    height: 100%;
-    perspective: 1000px;
-  }
-  
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    padding-top: 12%;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  
-  .flip-card-front {
-    background-color: #FAFAFA;
-    color: black;
-  }
-  
-  .flip-card-back {
-    background-color: #FAFAFA;
-    color: black;
-    transform: rotateY(180deg);
+
+.container {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15%;
+}
+.container h2{
+    color: white;
     font-family: $fontprincipal;
-    font-size: 17px;
-
+    font-size: 25px;
+    margin-bottom: 7%;
   }
+  
+.image {
+  display: inline-block;
+  width: 50%;
+  
+}
 
-  .each-title{
-      text-align: center;
-      margin-bottom: 5%;
-      font-size: 26px;
-  }
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #93278F;
+  border-radius: 5px;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding:3%;
+}
+.orange{
+  background-color: #f36a09;
+}

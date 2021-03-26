@@ -6,7 +6,7 @@
           box-sizing: border-box;
 }
 
-main {
+body {
   background-color: #002642;
 }
 
@@ -18,7 +18,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
 }
 
 .nav-transparent {
@@ -74,93 +74,29 @@ header {
 }
 
 .video {
+  width: 100%;
   height: 100vh;
+  margin-bottom: 7%;
 }
 
 .videosrc {
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
 }
 
-.categories {
-  position: relative;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-.type-categorie {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.titlelinks {
   font-family: "Rubik", sans-serif;
-}
-
-.color {
-  background-color: #660000;
+  text-align: center;
+  font-size: 44px;
   color: white;
-}
-
-.white {
-  background-color: #f6f6f6;
-  color: black;
-}
-
-.type-categorie h2 {
-  padding-top: 100px;
-  font-size: 45px;
-}
-
-.image-sites {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
-  margin-top: 70px;
-  padding-bottom: 20px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-.outer-border {
-  width: 75%;
-}
-
-.image-sites img {
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
-}
-
-.image-sites img:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
-.link {
-  -ms-grid-column: 2;
-      grid-column-start: 2;
+  margin-bottom: 3%;
 }
 
 .test {
@@ -186,6 +122,15 @@ header {
       -ms-grid-row-align: center;
       align-self: center;
   z-index: 2;
+}
+
+.test1 img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 1.2s;
+  transition: -webkit-transform 1.2s;
+  transition: transform 1.2s;
+  transition: transform 1.2s, -webkit-transform 1.2s;
 }
 
 .titletest {
@@ -239,12 +184,43 @@ header {
 
 .titletest h3 {
   font-family: "Rubik", sans-serif;
+  padding: 10px;
+  margin-bottom: 30px;
+  color: whitesmoke;
+  font-size: x-large;
+}
+
+.titletest h5 {
+  font-family: "Rubik", sans-serif;
   margin-bottom: 60px;
   color: whitesmoke;
+  padding: 10px;
+  font-size: large;
+}
+
+.line {
+  border-bottom: 2px solid white;
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  margin-left: 12.5%;
+}
+
+.linebottom {
+  border-bottom: 2px solid white;
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  margin-left: 12.5%;
+  margin-top: 5%;
 }
 
 .pilarescontent {
-  background-color: #FAFAFA;
+  background-color: #032b47;
 }
 
 .pilarestitle {
@@ -253,6 +229,7 @@ header {
   font-size: 44px;
   margin-bottom: 7%;
   font-family: "Rubik", sans-serif;
+  color: white;
 }
 
 .pilares {
@@ -260,81 +237,80 @@ header {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  height: 12.5rem;
 }
 
-.flip-card {
-  background-color: transparent;
-  width: 100%;
-  height: 100%;
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
-}
-
-.flip-card-inner {
+.container {
   position: relative;
   width: 100%;
-  height: 100%;
   text-align: center;
-  -webkit-transition: -webkit-transform 0.6s;
-  transition: -webkit-transform 0.6s;
-  transition: transform 0.6s;
-  transition: transform 0.6s, -webkit-transform 0.6s;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 15%;
 }
 
-.flip-card:hover .flip-card-inner {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  padding-top: 12%;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  background-color: #FAFAFA;
-  color: black;
-}
-
-.flip-card-back {
-  background-color: #FAFAFA;
-  color: black;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+.container h2 {
+  color: white;
   font-family: "Rubik", sans-serif;
-  font-size: 17px;
+  font-size: 25px;
+  margin-bottom: 7%;
 }
 
-.each-title {
+.image {
+  display: inline-block;
+  width: 50%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: #93278F;
+  border-radius: 5px;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
-  margin-bottom: 5%;
-  font-size: 26px;
+  padding: 3%;
+}
+
+.orange {
+  background-color: #f36a09;
 }
 
 .titleTeam {
   font-family: "Rubik", sans-serif;
-  margin-top: 10%;
+  margin-top: 5%;
   text-align: center;
   font-size: 44px;
+  color: white;
+  margin-bottom: 7%;
 }
 
 .team {
-  margin-top: 10%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 10%;
-  margin-bottom: 10%;
+}
+
+.teammate {
+  margin-bottom: 15%;
 }
 
 .image-profile {
@@ -355,14 +331,15 @@ header {
 }
 
 .image-profile img:hover {
-  -webkit-box-shadow: 0px 0px 0px 7px #cab4b4ce;
-          box-shadow: 0px 0px 0px 7px #cab4b4ce;
+  -webkit-box-shadow: 0px 0px 0px 7px #B40406;
+          box-shadow: 0px 0px 0px 7px #B40406;
 }
 
 .position {
   font-family: "Rubik", sans-serif;
   text-align: center;
-  margin-top: 2%;
+  margin-top: 4%;
+  color: white;
 }
 
 .icons {
@@ -372,14 +349,10 @@ header {
 .icon {
   padding: 2%;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .margin {
   margin-bottom: 2%;
-}
-
-footer {
-  margin-top: 20%;
 }
 /*# sourceMappingURL=style.css.map */

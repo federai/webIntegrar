@@ -24,7 +24,7 @@ $img-height: 150px;
 $img-border: white;
 $img-border-width: 6px;
 
-main{
+body{
   background-color: #002642;
 }
 @import 'header';
@@ -34,6 +34,5 @@ main{
 @import 'team';
 
 
-footer {
-  margin-top: 20%;
-}
+
+
