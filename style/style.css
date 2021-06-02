@@ -283,7 +283,7 @@ header {
 .container h2 {
   color: #161616;
   font-family: "Rubik", sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   margin-bottom: 7%;
   padding: 1%;
 }
@@ -314,7 +314,7 @@ header {
 
 .text {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   position: relative;
   top: 50%;
   left: 50%;
