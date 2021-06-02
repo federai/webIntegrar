@@ -6,8 +6,12 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #002642;
+  background: #d8dada;
 }
 
 header {
@@ -19,6 +23,16 @@ header {
   top: 0;
   width: 100%;
   z-index: 3;
+}
+
+.brand-logo {
+  position: absolute;
+  height: 70px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 10%;
+  margin-top: 18px;
 }
 
 .nav-transparent {
@@ -95,7 +109,7 @@ header {
   font-family: "Rubik", sans-serif;
   text-align: center;
   font-size: 44px;
-  color: white;
+  color: black;
   margin-bottom: 3%;
 }
 
@@ -125,28 +139,32 @@ header {
 }
 
 .test1 img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: -webkit-transform 1.2s;
-  transition: -webkit-transform 1.2s;
-  transition: transform 1.2s;
-  transition: transform 1.2s, -webkit-transform 1.2s;
+  -webkit-animation-name: zoomimage;
+          animation-name: zoomimage;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .titletest {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  background-color: #93278F;
+  background: radial-gradient(circle, #d52b1e 0%, #d52b1e 50%, #901a11 100%);
   width: 75%;
   text-align: center;
   -webkit-transform: translateY(-70px);
           transform: translateY(-70px);
   border-radius: 5px;
+  cursor: pointer;
+  height: 100%;
 }
 
 .colororange {
-  background-color: #f36a09;
+  background-color: #F48222;
 }
 
 @-webkit-keyframes agrandar {
@@ -163,11 +181,25 @@ header {
   }
 }
 
+@-webkit-keyframes zoomimage {
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes zoomimage {
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
 .titletest:hover {
   -webkit-animation-name: agrandar;
           animation-name: agrandar;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
   -webkit-animation-iteration-count: infinite;
@@ -176,10 +208,12 @@ header {
 
 .titletest h2 {
   font-family: "Rubik", sans-serif;
+  height: 70px;
   margin-top: 100px;
-  margin-bottom: 30px;
+  margin-bottom: 7%;
   color: white;
   font-size: xx-large;
+  padding: 1%;
 }
 
 .titletest h3 {
@@ -199,7 +233,7 @@ header {
 }
 
 .line {
-  border-bottom: 2px solid white;
+  border-bottom: 4px solid black;
   width: 75%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -209,7 +243,7 @@ header {
 }
 
 .linebottom {
-  border-bottom: 2px solid white;
+  border-bottom: 4px solid black;
   width: 75%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -220,7 +254,7 @@ header {
 }
 
 .pilarescontent {
-  background-color: #032b47;
+  background-color: #e7e6e6;
 }
 
 .pilarestitle {
@@ -229,7 +263,7 @@ header {
   font-size: 44px;
   margin-bottom: 7%;
   font-family: "Rubik", sans-serif;
-  color: white;
+  color: #141414;
 }
 
 .pilares {
@@ -247,10 +281,11 @@ header {
 }
 
 .container h2 {
-  color: white;
+  color: #161616;
   font-family: "Rubik", sans-serif;
   font-size: 25px;
   margin-bottom: 7%;
+  padding: 1%;
 }
 
 .image {
@@ -269,7 +304,7 @@ header {
   opacity: 0;
   -webkit-transition: .5s ease;
   transition: .5s ease;
-  background-color: #93278F;
+  background: radial-gradient(circle, #d52b1e 0%, #d52b1e 50%, #901a11 100%);
   border-radius: 5px;
 }
 
@@ -279,7 +314,7 @@ header {
 
 .text {
   color: white;
-  font-size: 20px;
+  font-size: 23px;
   position: relative;
   top: 50%;
   left: 50%;
@@ -298,7 +333,7 @@ header {
   margin-top: 5%;
   text-align: center;
   font-size: 44px;
-  color: white;
+  color: black;
   margin-bottom: 7%;
 }
 
@@ -318,14 +353,14 @@ header {
 }
 
 .image-profile img {
-  -webkit-box-shadow: 0px 0px 0px 1px #FAFAFA;
-          box-shadow: 0px 0px 0px 1px #FAFAFA;
+  -webkit-box-shadow: 0px 0px 0px 1px black;
+          box-shadow: 0px 0px 0px 1px black;
   -webkit-transition: -webkit-box-shadow 0.6s linear;
   transition: -webkit-box-shadow 0.6s linear;
   transition: box-shadow 0.6s linear;
   transition: box-shadow 0.6s linear, -webkit-box-shadow 0.6s linear;
-  border-bottom-left-radius: 40%;
-  border-bottom-right-radius: 40%;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
   border-top-right-radius: 5%;
   border-top-left-radius: 5%;
 }
@@ -335,24 +370,114 @@ header {
           box-shadow: 0px 0px 0px 7px #B40406;
 }
 
+.image-profile div:hover {
+  -webkit-box-shadow: 0px 0px 0px 7px #B40406;
+          box-shadow: 0px 0px 0px 7px #B40406;
+}
+
 .position {
   font-family: "Rubik", sans-serif;
   text-align: center;
   margin-top: 4%;
-  color: white;
+  color: black;
 }
 
 .icons {
   margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .icon {
   padding: 2%;
   text-decoration: none;
-  color: white;
+  color: black;
+}
+
+.teamsLogo {
+  margin-top: 4px;
+}
+
+.teamsLogo img {
+  margin-top: 2%;
+  width: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .margin {
   margin-bottom: 2%;
+}
+
+.contact {
+  position: relative;
+}
+
+.background {
+  background-image: url(/images/contacto.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  -webkit-filter: opacity(40%);
+          filter: opacity(40%);
+}
+
+.content-contact {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.contact h2 {
+  padding-top: 10%;
+  font-family: "Rubik", sans-serif;
+  margin-top: 5%;
+  text-align: center;
+  font-size: 44px;
+  color: black;
+  margin-bottom: 2%;
+}
+
+.options {
+  font-family: "Rubik", sans-serif;
+  margin-top: 2%;
+  text-align: center;
+  font-size: 23px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.options a {
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  background: radial-gradient(circle, #d52b1e 0%, #d52b1e 50%, #901a11 100%);
+  padding: 1%;
+}
+
+.logo {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

@@ -3,7 +3,7 @@
     margin-top: 5%;
     text-align: center;
     font-size: 44px;
-    color: white;
+    color: black;
     margin-bottom: 7%;
 }
 
@@ -21,30 +21,47 @@
     
 
 }
+
 .image-profile img{ 
-    box-shadow: 0px 0px 0px 1px #FAFAFA;
+    box-shadow: 0px 0px 0px 1px black;
     transition: box-shadow 0.6s linear;
-    border-bottom-left-radius: 40%;
-    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
     border-top-right-radius: 5%;
     border-top-left-radius: 5%;
 }
 .image-profile img:hover{
     box-shadow: 0px 0px 0px 7px #B40406;
 }
+.image-profile div:hover{
+    box-shadow: 0px 0px 0px 7px #B40406;
+}
 .position{
     font-family: $fontprincipal;
     text-align: center;
     margin-top: 4%;
-    color: white;
+    color: black;
 }
 .icons{
     margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+
 }
 .icon{
     padding: 2%;
     text-decoration: none;
-    color: white;
+    color: black;
+}
+.teamsLogo {
+    margin-top:4px; 
+}
+.teamsLogo img{
+   margin-top: 2%;
+    width: 40px;
+    align-items: center;
+    
 }
 .margin{
     margin-bottom: 2%;

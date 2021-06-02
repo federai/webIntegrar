@@ -1,6 +1,6 @@
 
 .pilarescontent{
-    background-color: #032b47;
+    background-color: rgb(231, 230, 230);
     
     
     
@@ -11,7 +11,7 @@
     font-size: 44px;
     margin-bottom: 7%;
     font-family: $fontprincipal;
-    color: white;
+    color: rgb(20, 20, 20);
     
 }
 .pilares{
@@ -28,10 +28,11 @@
   margin-bottom: 15%;
 }
 .container h2{
-    color: white;
+    color: rgb(22, 22, 22);
     font-family: $fontprincipal;
     font-size: 25px;
     margin-bottom: 7%;
+    padding: 1%;
   }
   
 .image {
@@ -50,7 +51,7 @@
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #93278F;
+  background: radial-gradient(circle, rgba(213,43,30,1) 0%, rgba(213,43,30,1) 50%, rgba(144,26,17,1) 100%);
   border-radius: 5px;
 }
 
@@ -60,7 +61,7 @@
 
 .text {
   color: white;
-  font-size: 20px;
+  font-size: 23px;
   position: relative;
   top: 50%;
   left: 50%;

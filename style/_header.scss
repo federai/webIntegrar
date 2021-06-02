@@ -10,6 +10,14 @@ header{
   z-index: 3;
   
 }
+.brand-logo{
+  position: absolute;
+  height: 70px;
+  align-items: center;
+  margin-left: 10%;
+  margin-top: 18px;
+
+}
 .nav-transparent {
   background-color: transparent;
   transition: background-color 400ms linear;
