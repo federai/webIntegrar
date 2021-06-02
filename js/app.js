@@ -38,8 +38,8 @@ document.getElementById('planes').addEventListener('click', function() {
   window.open('http://integrar.claro.amx/planes')
 }, false);
 
-document.getElementById('proveedores').addEventListener('click', function() {
-  window.open('')
+document.getElementById('tableromando').addEventListener('click', function() {
+  window.open('http://integrar.claro.amx/tableromando')
 }, false);
 
 document.getElementById('5G').addEventListener('click', function() {
