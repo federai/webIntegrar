@@ -382,6 +382,22 @@ header {
   color: black;
 }
 
+.position h2 {
+  font-size: 24px;
+}
+
+.position h3 {
+  font-size: 21px;
+}
+
+.position h4 {
+  font-size: 19px;
+}
+
+.position .margin {
+  margin-bottom: 2%;
+}
+
 .icons {
   margin-top: 10px;
   display: -webkit-box;
@@ -412,10 +428,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.margin {
-  margin-bottom: 2%;
 }
 
 .contact {
