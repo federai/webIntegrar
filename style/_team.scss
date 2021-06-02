@@ -10,6 +10,7 @@
 .team{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    // column-gap: 2%;
     
     
 }
@@ -42,13 +43,13 @@
     margin-top: 4%;
     color: black;
     h2{
-        font-size: 24px;
+        font-size: 20px;
     }
     h3{
-        font-size: 21px;
+        font-size: 18px;
     }
     h4{
-        font-size: 19px;
+        font-size: 16px;
     }
     .margin{
         margin-bottom: 2%;
