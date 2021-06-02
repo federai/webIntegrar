@@ -42,7 +42,7 @@ header {
 }
 
 .nav-colored {
-  background-color: #005a87;
+  background-color: #d52b1e;
   -webkit-transition: background-color 400ms linear;
   transition: background-color 400ms linear;
 }
@@ -108,7 +108,7 @@ header {
 .titlelinks {
   font-family: "Rubik", sans-serif;
   text-align: center;
-  font-size: 44px;
+  font-size: 40px;
   color: black;
   margin-bottom: 3%;
 }
@@ -212,7 +212,7 @@ header {
   margin-top: 100px;
   margin-bottom: 7%;
   color: white;
-  font-size: xx-large;
+  font-size: 28px;
   padding: 1%;
 }
 
@@ -221,7 +221,7 @@ header {
   padding: 10px;
   margin-bottom: 30px;
   color: whitesmoke;
-  font-size: x-large;
+  font-size: 23px;
 }
 
 .titletest h5 {
@@ -283,7 +283,7 @@ header {
 .container h2 {
   color: #161616;
   font-family: "Rubik", sans-serif;
-  font-size: 25px;
+  font-size: 22px;
   margin-bottom: 7%;
   padding: 1%;
 }
@@ -314,7 +314,7 @@ header {
 
 .text {
   color: white;
-  font-size: 23px;
+  font-size: 20px;
   position: relative;
   top: 50%;
   left: 50%;
