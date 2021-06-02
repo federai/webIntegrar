@@ -7,15 +7,23 @@ header{
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
   
+}
+.brand-logo{
+  position: absolute;
+  height: 70px;
+  align-items: center;
+  margin-left: 10%;
+  margin-top: 18px;
+
 }
 .nav-transparent {
   background-color: transparent;
   transition: background-color 400ms linear;
 }
 .nav-colored {
-  background-color: black;
+  background-color: #005a87;
   transition: background-color 400ms linear;
 }
 .menu {

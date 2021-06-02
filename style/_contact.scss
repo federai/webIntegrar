@@ -1,0 +1,51 @@
+.contact{
+  position: relative;
+}
+.background {
+  background-image: url(/images/contacto.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  filter: opacity(40%);
+}
+.content-contact{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.contact h2 {
+  padding-top: 10%;
+  font-family: $fontprincipal;
+  margin-top: 5%;
+  text-align: center;
+  font-size: 44px;
+  color: black;
+  margin-bottom: 2%;
+  
+}
+.options {
+  font-family: $fontprincipal;
+  margin-top: 2%;
+  text-align: center;
+  font-size: 23px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+.options a {
+  text-decoration: none;
+  color: black;
+}
+
+footer{
+  background: radial-gradient(circle, rgba(213,43,30,1) 0%, rgba(213,43,30,1) 50%, rgba(144,26,17,1) 100%);;
+  padding: 1%;
+}
+.logo{
+  text-align: center;
+}

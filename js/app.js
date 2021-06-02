@@ -20,3 +20,29 @@ function myFunction() {
 // img.addEventListener ('click',()=>{
   
 // })
+
+document.getElementById('tableroscrum').addEventListener('click', function() {
+  window.open( 'http://integrar.claro.amx/scrum')
+}, false);
+
+
+document.getElementById('implapedia').addEventListener('click', function() {
+  window.open('http://integrar.claro.amx/implapedia')
+}, false);
+
+document.getElementById('catalogo').addEventListener('click', function() {
+  window.open('https://claro.sytex.io/catalogo/')
+}, false);
+
+document.getElementById('planes').addEventListener('click', function() {
+  window.open('http://integrar.claro.amx/planes')
+}, false);
+
+document.getElementById('proveedores').addEventListener('click', function() {
+  window.open('')
+}, false);
+
+document.getElementById('5G').addEventListener('click', function() {
+  window.open('http://integrar.claro.amx/5G')
+}, false);
+
